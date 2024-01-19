@@ -1,5 +1,43 @@
+.images{
+    width: 730px;
+}
 .images img{
     height: 100vh;
     width:100%;
     margin-left: 40px;
+}
+@media(max-width:325px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:326px) and (max-width:500px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:501px) and (max-width:575px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .images{
+        width: 100%;
+    }
+}
+@media(min-width:1200px) and (max-width:1279px){
+    .images{
+        width: 100%;
+    }
 }

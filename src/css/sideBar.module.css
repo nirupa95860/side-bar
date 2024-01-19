@@ -1,13 +1,24 @@
 .sideBar_main {
-    width: 270px;
+    background-color: #fff;
     border: solid 1px #e7dede;
+    width: 270px;
     overflow-y: scroll;
 }
+.t_Button,.closeButton,.t_logo{
+    display: none;
+}
+.toggleIcon{
+    display: flex;
+    align-items: center;
+}
 .fixLogo{
-    position: sticky;
+    position: sticky;       
     top: 0;
-    background-color: #fdfdfd;
     overflow: hidden;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     padding: 25px 34px;
@@ -17,29 +28,29 @@
     margin: 10px 0;
 }
 .sidebar_main_Link {
-    margin: 10px 0;
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 .bottomSide h6 {
+    color: #747070;
     font-size: 12px;
-    color: #666666;
-    font-family: "Poppins";
     letter-spacing: 2px;
     padding: 8px 10px;
+    font-family: "Poppins";
 }
 .bottomSide a{
-    padding: 8px 10px;
     transition: 0.4s all;
+    padding: 8px 10px;
 }
 .linkInner {
     margin-top: 10px;
 }
-.active{
-    color: rgb(59, 103, 199)!important;
+.link_active{
+    color: rgb(66, 112, 212)!important;
 }
 .bottomSide a:hover{
-    background-color: #f0f0f0;
+    background-color: #f2ebeb;
     border-radius: 5px;
 }
 .sidebar_main_Link .icon {
@@ -55,8 +66,8 @@
 
 .sidebar_main_Justi .new {
     color: rgb(235, 81, 81);
-    border: 1px solid red;
-    background-color: rgb(247, 209, 209);
+    border: 1px solid rgb(230, 95, 95);
+    background-color: rgb(241, 193, 193);
     padding: 1px 5px;
     border-radius: 20px;
     font-size: 12px;
@@ -82,13 +93,234 @@ color: #ccc;
     margin: 10px 0;
     display: block;
 }
-
-@media (max-width: 768px) {
+@media(max-width:325px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main  {
+        width: 100%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -3250px;
+        top: 0;
+    }
+    .t_sidebar{
+        width: 100%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    }
+}
+@media(min-width:326px) and (max-width:500px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
     .sideBar_main {
-      width: 100%;
+        width: 100%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -3250px;
+        top: 0;
     }
-    /* Adjust other styles as needed for smaller screens */
-    .sidebar_main_Link {
-      padding: 10px;
+    .t_sidebar{
+        width: 80%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-  }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    }
+}
+@media(min-width:501px) and (max-width:575px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main {
+        width: 50%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -290px;
+        top: 0;
+    }
+    .t_sidebar{
+        width: 50%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    }
+    
+}
+
+@media(min-width:576px) and (max-width:767px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main{
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -385px;
+        top: 0;
+    }
+    .t_sidebar{
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main {
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -495px;
+        top: 0;
+    }
+    .closeButton{
+        display: block;
+        font-size: 20px;
+        padding: 20px 15px 20px;
+    }
+    .t_sidebar{
+        position: absolute;
+        width: 50%;
+        overflow-y: scroll!important;
+        top: 0;
+        left: 0;
+    }
+    .t_logo{
+        display: block;
+    }   
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main {
+        width: 50%;
+        overflow-y: scroll!important;
+        left: -590px;
+        position: absolute;
+        top: 0;
+    }
+    .t_sidebar{
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    } 
+}
+@media(min-width:1200px) and (max-width:1279px){
+    .t_Button{
+        display: block;
+        font-size: 30px;
+        padding: 15px 20px 10px;
+    }
+    .sideBar_main {
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        left: -650px;
+        top: 0;
+    }
+    .t_sidebar{
+        width: 50%;
+        overflow-y: scroll!important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .closeButton{
+        display: block;
+        padding: 20px 15px 20px;
+        font-size: 20px;
+    }
+    .t_logo{
+        display: block;
+    } 
+}
+@media(min-width:1280px) and (max-width:1440px){
+    .sideBar_main {
+        width: 25%;
+        border: 1px solid #e7dede;
+        overflow-y: scroll!important;
+        background-color: #fff;
+    }
+    .toggleIcon{
+        display: flex;
+        align-items: center;
+    }
+    
+    .t_Button{
+        display: none;
+    }
+    .closeButton,.t_logo{
+        display: none;
+    }
+}
